@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌈 Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌈 Mood Tracker</h1>
+            <p>Track your daily mood and discover weather patterns</p>
+        </header>
+
+        <main>
+            <!-- Mood Logging Section -->
+            <section class="mood-logger">
+                <h2>How are you feeling today?</h2>
+                <form id="mood-form">
+                    <div class="mood-options">
+                        <button type="button" class="mood-btn" data-mood="happy">😊 Happy</button>
+                        <button type="button" class="mood-btn" data-mood="sad">😢 Sad</button>
+                        <button type="button" class="mood-btn" data-mood="neutral">😐 Neutral</button>
+                        <button type="button" class="mood-btn" data-mood="energetic">⚡ Energetic</button>
+                        <button type="button" class="mood-btn" data-mood="calm">😌 Calm</button>
+                        <button type="button" class="mood-btn" data-mood="stressed">😰 Stressed</button>
+                    </div>
+                    
+                    <textarea 
+                        id="mood-notes" 
+                        placeholder="Any thoughts or notes about your mood? (optional)"
+                        rows="3"
+                    ></textarea>
+                    
+                    <button type="submit" id="submit-mood" disabled>
+                        <span id="submit-text">Select a mood first</span>
+                        <span id="submit-loading" style="display: none;">Logging mood...</span>
+                    </button>
+                </form>
+            </section>
+
+            <!-- Insights Section -->
+            <section class="insights">
+                <h2>📊 Your Insights</h2>
+                <div id="insights-content">
+                    <p class="loading">Loading insights...</p>
+                </div>
+            </section>
+
+            <!-- Mood History Section -->
+            <section class="mood-history">
+                <h2>📅 Recent Moods</h2>
+                <div id="mood-timeline">
+                    <p class="loading">Loading mood history...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>🌤️ Weather data powered by OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <!-- Success/Error Messages -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

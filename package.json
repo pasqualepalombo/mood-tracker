@@ -1,0 +1,12 @@
+{
+  "name": "mood-tracker",
+  "version": "1.0.0",
+  "description": "Personal Mood Tracker with Weather Integration",
+  "scripts": {
+    "dev": "cd backend && npm start",
+    "build": "cd backend && npm install"
+  },
+  "keywords": ["mood", "weather", "tracker"],
+  "author": "",
+  "license": "MIT"
+}

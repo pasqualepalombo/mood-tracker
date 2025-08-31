@@ -1,0 +1,17 @@
+{
+  "entries": [
+    {
+      "id": "1756629274791",
+      "timestamp": "2025-08-31T08:34:34.791Z",
+      "mood": "calm",
+      "notes": "Calm and ready to adventure outside with my bike!",
+      "weather": {
+        "condition": "unknown",
+        "temperature": 20,
+        "description": "Weather data unavailable",
+        "humidity": 50,
+        "city": "Unknown"
+      }
+    }
+  ]
+}
